@@ -1,0 +1,89 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Dong Dang Khoa
+ID: s3986281
+Acknowledgement: Acknowledge the resources that you use here. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Assests/bookshelf-high-resolution-color-logo.png">
+</head>
+<body>
+    <header>
+        <img src="Assests/logo.png" alt="logo">
+        <nav class="navbar">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+
+            <div class="navbutton">
+                <ul >
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fiction.html">Fiction </a></li>
+                    <li><a href="nonfiction.html">Non fiction</a></li>
+                    <li><a href="textbook.html">Text book</a></li>
+                </ul>
+            </div>
+           
+        </nav>
+    </header>    
+    <h5>Home > Text book > The Bogleheads' Guide to Investing
+    </h5>
+    <div class="book-page">
+        <div class="book-container">
+            <img src="Assests/head.jpg" alt="head" class="detailimg">
+        </div>
+        <div class="side-book-container">
+            <img src="Assests/head1.png" alt="head" class="detailimg-1">
+            <img src="Assests/head3.jpeg" alt="head" class="detailimg-2">
+            <img src="Assests/head2.png" alt="head" class="detailimg-3">
+
+        </div>
+        <div class="button-container-detail">
+            <a class="productinfo" href="">$10</a>
+            <button class="detailbutton">Buy now</button>
+            <button class="detailbutton">Add to cart</button>
+        </div>  
+    </div>
+    <div class="bookinfo">
+        <h2> The Bogleheads' Guide to Investing</h2>
+        <p>
+
+            The Bogleheads' Guide to Investing is a slightly irreverent, straightforward guide to investing for everyone. The book offers sound, practical advice, no matter what your age or net worth. Bottomline, become a Boglehead and prosper! Originally just the chat-line ruminations of Boglehead founder Taylor Larimore, and Morningstar forum leading cohorts Mel Lindauer and Michael LeBoeuf, their trusted advice has been brewed and distilled into an easy-to-use, need-to-know, no frills guide to building up your own financial well-being - so you can worry less and profit more from the investments you make. Invest like a Boglehead, and let their grassroots investment wisdom guide you down the path of long-term wealth creation and happiness, without all the worries and fuss of stock pickers and day traders. If you face a financial crisis or problem, or simply want to know what is prudent to do with the money you save, the Bogleheads will have the answers you need to help you gain your financial footing and keep it.
+
+ </p>
+    </div> 
+  
+
+    <footer>
+        <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Copyright</a></li>
+            <li><a href="contact.html">Contact Us   </a></li>
+        </ul>
+        <script>
+            const toggleButton = document.querySelector('.toggle-button');
+            const navbutton = document.querySelector('.navbutton');
+    
+            toggleButton.addEventListener('click', () => {
+                navbutton.classList.toggle('active');
+            });
+        </script>
+    </footer>
+</body>
+</html>

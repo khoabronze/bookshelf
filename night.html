@@ -1,0 +1,92 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Dong Dang Khoa
+ID: s3986281
+Acknowledgement: Acknowledge the resources that you use here. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Assests/bookshelf-high-resolution-color-logo.png">
+</head>
+<body>
+    <header>
+        <img src="Assests/logo.png" alt="logo">
+        <nav class="navbar">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+
+            <div class="navbutton">
+                <ul >
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fiction.html">Fiction </a></li>
+                    <li><a href="nonfiction.html">Non fiction</a></li>
+                    <li><a href="textbook.html">Text book</a></li>
+                </ul>
+            </div>
+           
+        </nav>
+    </header>    
+    <h5>Home > Fiction > Daughters of the night </h5>
+    <div class="book-page">
+        <div class="book-container">
+            <img src="Assests/night.jpg" alt="night" class="detailimg">
+        </div>
+        <div class="side-book-container">
+            <img src="Assests/night1.jpg" alt="night" class="detailimg-1">
+            <img src="Assests/night2.webp" alt="night" class="detailimg-2">
+            <img src="Assests/night3.jpeg" alt="night" class="detailimg-3">
+
+        </div>
+        <div class="button-container-detail">
+            <a class="productinfo" href="">$10</a>
+            <button class="detailbutton">Buy now</button>
+            <button class="detailbutton">Add to cart</button>
+        </div>  
+    </div>
+    <div class="bookinfo">
+        <h2>Daughters of night</h2>
+        <p>
+            From the brothels and gin-shops of Covent Garden to the elegant townhouses of Mayfair, Laura Shepherd-Robinson's Daughters of Night follows Caroline Corsham, as she seeks justice for a murdered woman whom London society would rather forget . . .
+
+Lucia's fingers found her own. She gazed at Caro as if from a distance. Her lips parted, her words a whisper: 'He knows.'
+
+London, 1782. Desperate for her politician husband to return home from France, Caroline 'Caro' Corsham is already in a state of anxiety when she finds a well-dressed woman mortally wounded in the bowers of the Vauxhall Pleasure Gardens. The Bow Street constables are swift to act, until they discover that the deceased woman was a highly-paid prostitute, at which point they cease to care entirely. But Caro has motives of her own for wanting to see justice done, and so sets out to solve the crime herself. Enlisting the help of thieftaker, Peregrine Child, their inquiry delves into the hidden corners of Georgian society, a world of artifice, deception and secret lives.
+
+But with many gentlemen refusing to speak about their dealings with the dead woman, and Caro's own reputation under threat, finding the killer will be harder, and more treacherous than she can know . . .
+        </p>
+    </div> 
+  
+
+    <footer>
+        <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Copyright</a></li>
+            <li><a href="contact.html">Contact Us   </a></li>
+        </ul>
+        <script>
+            const toggleButton = document.querySelector('.toggle-button');
+            const navbutton = document.querySelector('.navbutton');
+    
+            toggleButton.addEventListener('click', () => {
+                navbutton.classList.toggle('active');
+            });
+        </script>
+    </footer>
+</body>
+</html>

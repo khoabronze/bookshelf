@@ -1,0 +1,92 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Dong Dang Khoa
+ID: s3986281
+Acknowledgement: Acknowledge the resources that you use here. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Assests/bookshelf-high-resolution-color-logo.png">
+</head>
+<body>
+    <header>
+        <img src="Assests/logo.png" alt="logo">
+        <nav class="navbar">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+
+            <div class="navbutton">
+                <ul >
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fiction.html">Fiction </a></li>
+                    <li><a href="nonfiction.html">Non fiction</a></li>
+                    <li><a href="textbook.html">Text book</a></li>
+                </ul>
+            </div>
+           
+        </nav>
+    </header>    
+    <h5>Home > Fiction > 2001: A space odyssey </h5>
+    <div class="book-page">
+        <div class="book-container">
+            <img src="Assests/space.jpg" alt="space" class="detailimg">
+        </div>
+        <div class="side-book-container">
+            <img src="Assests/space1.jpeg" alt="space" class="detailimg-1">
+            <img src="Assests/space2.jpg" alt="space" class="detailimg-2">
+            <img src="Assests/space3.jpg" alt="space" class="detailimg-3">
+
+        </div>
+        <div class="button-container-detail">
+            <a class="productinfo" href="">$10</a>
+            <button class="detailbutton">Buy now</button>
+            <button class="detailbutton">Add to cart</button>
+        </div>  
+    </div>
+    <div class="bookinfo">
+        <h2>2001: A space odyssey</h2>
+        <p>
+            The classic science fiction novel that captures and expands on the vision of Stanley Kubrick's immortal film—and changed the way we look at the stars and ourselves.
+
+From the savannas of Africa at the dawn of mankind to the rings of Saturn as man ventures to the outer rim of our solar system, 2001: A Space Odyssey is a journey unlike any other.
+
+This allegory about humanity’s exploration of the universe—and the universe's reaction to humanity—is a hallmark achievement in storytelling that follows the crew of the spacecraft Discovery as they embark on a mission to Saturn. Their vessel is controlled by HAL 9000, an artificially intelligent supercomputer capable of the highest level of cognitive functioning that rivals—and perhaps threatens—the human mind.
+
+Grappling with space exploration, the perils of technology, and the limits of human power, 2001: A Space Odyssey continues to be an enduring classic of cinematic scope.
+        </p>
+    </div> 
+  
+
+    <footer>
+        <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Copyright</a></li>
+            <li><a href="contact.html">Contact Us   </a></li>
+        </ul>
+        <script>
+            const toggleButton = document.querySelector('.toggle-button');
+            const navbutton = document.querySelector('.navbutton');
+    
+            toggleButton.addEventListener('click', () => {
+                navbutton.classList.toggle('active');
+            });
+        </script>
+    </footer>
+</body>
+</html>

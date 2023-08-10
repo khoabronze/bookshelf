@@ -1,0 +1,91 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Dong Dang Khoa
+ID: s3986281
+Acknowledgement: Acknowledge the resources that you use here. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Assests/bookshelf-high-resolution-color-logo.png">
+</head>
+<body>
+    <header>
+        <img src="Assests/logo.png" alt="logo">
+        <nav class="navbar">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+
+            <div class="navbutton">
+                <ul >
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fiction.html">Fiction </a></li>
+                    <li><a href="nonfiction.html">Non fiction</a></li>
+                    <li><a href="textbook.html">Text book</a></li>
+                </ul>
+            </div>
+           
+        </nav>
+    </header>    
+    <h5>Home > Text book > Landmarks in humanities
+    </h5>
+    <div class="book-page">
+        <div class="book-container">
+            <img src="Assests/landmark.jpg" alt="landmark" class="detailimg">
+        </div>
+        <div class="side-book-container">
+            <img src="Assests/land1.jpg" alt="landmark" class="detailimg-1">
+            <img src="Assests/land1.jpg" alt="landmark" class="detailimg-2">
+            <img src="Assests/land1.jpg" alt="landmark" class="detailimg-3">
+
+        </div>
+        <div class="button-container-detail">
+            <a class="productinfo" href="">$10</a>
+            <button class="detailbutton">Buy now</button>
+            <button class="detailbutton">Add to cart</button>
+        </div>  
+    </div>
+    <div class="bookinfo">
+        <h2> landmarks in humanities</h2>
+        <p>
+            Landmarks in Humanities is a single-volume survey of global culture designed to help students of humanities, cultural history, and history of the arts to understand and appreciate the relevance of historical works and ideas to their own daily lives. In chronological sequence, Landmarks guides students on a journey of the most notable monuments of the human imagination and the most prominent ideas and issues that have shaped the course and character of the world’s cultures from prehistory to the present. The landmarks that mark this journey are the great works of their place and time and, in some cases, of all time.
+
+
+            Enhanced by McGraw-Hill's SmartBook, Gloria Fiero delivers a learning experience tailored to the needs of each institution, instructor, and student. With the ability to incorporate new extended readings, streaming music, and artwork, Landmarks in Humanities renews the understanding of the relationship between world cultures and humankind's creative legacy.
+
+ </p>
+    </div> 
+  
+
+    <footer>
+        <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Copyright</a></li>
+            <li><a href="contact.html">Contact Us   </a></li>
+        </ul>
+        <script>
+            const toggleButton = document.querySelector('.toggle-button');
+            const navbutton = document.querySelector('.navbutton');
+    
+            toggleButton.addEventListener('click', () => {
+                navbutton.classList.toggle('active');
+            });
+        </script>
+    </footer>
+</body>
+</html>

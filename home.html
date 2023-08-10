@@ -1,0 +1,100 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Dong Dang Khoa
+ID: s3986281
+Acknowledgement: Acknowledge the resources that you use here. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Assests/bookshelf-high-resolution-color-logo.png">
+</head>
+<body>
+    <header>
+        <img src="Assests/logo.png" alt="logo">
+        <nav class="navbar">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+
+            <div class="navbutton">
+                <ul >
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fiction.html">Fiction </a></li>
+                    <li><a href="nonfiction.html">Non fiction</a></li>
+                    <li><a href="textbook.html">Text book</a></li>
+                </ul>
+            </div>
+           
+        </nav>
+    </header>    
+    <h5>Home > Fiction > homecoming </h5>
+    <div class="book-page">
+        <div class="book-container">
+            <img src="Assests/homecoming.jpg" alt="home" class="detailimg">
+        </div>
+        <div class="side-book-container">
+            <img src="Assests/home1.jpeg" alt="home" class="detailimg-1">
+            <img src="Assests/home2.jpeg" alt="home" class="detailimg-2">
+            <img src="Assests/home3.jpeg" alt="home" class="detailimg-3">
+
+        </div>
+        <div class="button-container-detail">
+            <a class="productinfo" href="">$10</a>
+            <button class="detailbutton">Buy now</button>
+            <button class="detailbutton">Add to cart</button>
+        </div>  
+    </div>
+    <div class="bookinfo">
+        <h2>Homecoming</h2>
+        <p>
+            'Captivating . . . a sweeping yet intimate tale of motherhood and belonging, loss and longing' - Mail on Sunday
+
+'It is a treat; it is a big deep dive, twisty turny yarn. It is fantastic' - Graham Norton
+
+From the bestselling author of The Clockmaker's Daughter, Kate Morton, comes a breathtaking mystery of love, lies and a cold case come back to life, told with her trademark intricacy and beauty.
+
+Adelaide Hills, Christmas Eve, 1959. At the end of a scorching hot day, beside a creek in the grounds of a grand and mysterious mansion, a local delivery man makes a terrible discovery. A police investigation is called and the small town of Tambilla becomes embroiled in one of the most shocking and perplexing murder cases in the history of South Australia.
+
+Sixty years later, Jess is a journalist in search of a story. Having lived and worked in London for almost twenty years, she now finds herself laid off from her full-time job and struggling to make ends meet. A phone call out of nowhere summons her back to Sydney, where her beloved grandmother, Nora, who raised Jess when her mother could not, has suffered a fall and been raced to the hospital.
+
+At a loose end in Nora's house, Jess does some digging into her past. In Nora's bedroom, she discovers a true crime book, chronicling the police investigation into a long-buried tragedy: the Turner Family Tragedy of Christmas Eve, 1959. It is only when Jess skims through the book that she finds a shocking connection between her own family and this once-infamous crime – a crime that has never been truly solved. And for a journalist without a story, a cold case might be the best distraction she can find . . .
+
+An epic novel that spans generations, Homecoming asks what we would do for those we love, and how we protect the lies we tell. It explores the power of motherhood, the corrosive effects of tightly held secrets, and the healing nature of truth.
+
+'This is one to devour on holiday' - Prima
+ </p>
+    </div> 
+  
+
+    <footer>
+        <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Copyright</a></li>
+            <li><a href="contact.html">Contact Us   </a></li>
+        </ul>
+        <script>
+            const toggleButton = document.querySelector('.toggle-button');
+            const navbutton = document.querySelector('.navbutton');
+    
+            toggleButton.addEventListener('click', () => {
+                navbutton.classList.toggle('active');
+            });
+        </script>
+    </footer>
+</body>
+</html>

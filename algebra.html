@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Assests/bookshelf-high-resolution-color-logo.png">
+</head>
+<body>
+    <header>
+        <img src="Assests/logo.png" alt="logo">
+        <nav class="navbar">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+
+            <div class="navbutton">
+                <ul >
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fiction.html">Fiction </a></li>
+                    <li><a href="nonfiction.html">Non fiction</a></li>
+                    <li><a href="textbook.html">Text book</a></li>
+                </ul>
+            </div>
+           
+        </nav>
+    </header>    
+    <h5>Home > Text book > Algebra and Trigonometry 2e
+    </h5>
+    <div class="book-page">
+        <div class="book-container">
+            <img src="Assests/algebra.jpg" alt="algebra" class="detailimg">
+        </div>
+        <div class="side-book-container">
+            <img src="Assests/algebra1.jpeg" alt="algebra" class="detailimg-1">
+            <img src="Assests/algebra2.jpg" alt="algebra" class="detailimg-2">
+            <img src="Assests/algebra3.jpeg" alt="algebra" class="detailimg-3">
+
+        </div>
+        <div class="button-container-detail">
+            <a class="productinfo" href="">$10</a>
+            <button class="detailbutton">Buy now</button>
+            <button class="detailbutton">Add to cart</button>
+        </div>  
+    </div>
+    <div class="bookinfo">
+        <h2>Algebra and Trigonometry 2e</h2>
+        <p>
+            Algebra and Trigonometry 2e provides a comprehensive exploration of mathematical principles and meets scope and sequence requirements for a typical introductory algebra and trigonometry course. The modular approach and the richness of content ensure that the book addresses the needs of a variety of courses. Algebra and Trigonometry 2e offers a wealth of examples with detailed, conceptual explanations, building a strong foundation in the material before asking students to apply what they've learned.
+
+            The Algebra and Trigonometry 2e revision focused on improving relevance and representation as well as mathematical clarity and accuracy. Introductory narratives, examples, and problems were reviewed and revised using a diversity, equity, and inclusion framework. Many contexts, scenarios, and images have been changed to become even more relevant to students' lives and interests. To maintain our commitment to accuracy and precision, examples, exercises, and solutions were reviewed by multiple faculty experts. All improvement suggestions and errata updates from the first edition were considered and unified across the different formats of the text. The first edition of Algebra and Trigonometry by OpenStax is also available.
+            
+            This is the official print version of this OpenStax textbook. OpenStax makes full-color hardcover and B&W paperback print copies available for students who prefer a hardcopy textbook to go with the free digital version of this OpenStax title. The textbook content is exactly the same as the OpenStax digital book. This textbook is available for free download at the OpenStax dot org website, but as many students prefer to study with hardcopy books, we offer affordable OpenStax textbooks for sale through Amazon as well as most campus bookstores.
+ </p>
+    </div> 
+  
+
+    <footer>
+        <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Copyright</a></li>
+            <li><a href="contact.html">Contact Us   </a></li>
+        </ul>
+        <script>
+            const toggleButton = document.querySelector('.toggle-button');
+            const navbutton = document.querySelector('.navbutton');
+    
+            toggleButton.addEventListener('click', () => {
+                navbutton.classList.toggle('active');
+            });
+        </script>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Dong Dang Khoa
+ID: s3986281
+Acknowledgement: Acknowledge the resources that you use here. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Assests/bookshelf-high-resolution-color-logo.png">
+</head>
+<body>
+    <header>
+        <img src="Assests/logo.png" alt="logo">
+        <nav class="navbar">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+
+            <div class="navbutton">
+                <ul >
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fiction.html">Fiction </a></li>
+                    <li><a href="nonfiction.html">Non fiction</a></li>
+                    <li><a href="textbook.html">Text book</a></li>
+                </ul>
+            </div>
+           
+        </nav>
+    </header>    
+    <h5>Home > Non Fiction > World Travel: An Irreverent Guide
+    </h5>
+    <div class="book-page">
+        <div class="book-container">
+            <img src="Assests/world.jpg" alt="world" class="detailimg">
+        </div>
+        <div class="side-book-container">
+            <img src="Assests/world1.jpeg" alt="world" class="detailimg-1">
+            <img src="Assests/world2.jpeg" alt="world" class="detailimg-2">
+            <img src="Assests/world3.jpeg" alt="world" class="detailimg-3">
+
+        </div>
+        <div class="button-container-detail">
+            <a class="productinfo" href="">$10</a>
+            <button class="detailbutton">Buy now</button>
+            <button class="detailbutton">Add to cart</button>
+        </div>  
+    </div>
+    <div class="bookinfo">
+        <h2>World Travel: An Irreverent Guide</h2>
+        <p>
+            A guide to some of the world's most fascinating places, as seen and experienced by writer, television host, and relentlessly curious traveler Anthony Bourdain
+
+            Anthony Bourdain saw more of the world than nearly anyone. His travels took him from the hidden pockets of his hometown of New York to a tribal longhouse in Borneo, from cosmopolitan Buenos Aires, Paris, and Shanghai to Tanzania's utter beauty and the stunning desert solitude of Oman's Empty Quarter—and many places beyond.
+            
+            In World Travel, a life of experience is collected into an entertaining, practical, fun and frank travel guide that gives readers an introduction to some of his favorite places—in his own words. Featuring essential advice on how to get there, what to eat, where to stay and, in some cases, what to avoid, World Travel provides essential context that will help readers further appreciate the reasons why Bourdain found a place enchanting and memorable.
+            
+            Supplementing Bourdain's words are a handful of essays by friends, colleagues, and family that tell even deeper stories about a place, including sardonic accounts of traveling with Bourdain by his brother, Christopher; a guide to Chicago's best cheap eats by legendary music producer Steve Albini, and more. Additionally, each chapter includes illustrations by Wesley Allsbrook.
+            
+            For veteran travelers, armchair enthusiasts, and those in between, World Travel offers a chance to experience the world like Anthony Bourdain.
+ </p>
+    </div> 
+  
+
+    <footer>
+        <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Copyright</a></li>
+            <li><a href="contact.html">Contact Us   </a></li>
+        </ul>
+        <script>
+            const toggleButton = document.querySelector('.toggle-button');
+            const navbutton = document.querySelector('.navbutton');
+    
+            toggleButton.addEventListener('click', () => {
+                navbutton.classList.toggle('active');
+            });
+        </script>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Dong Dang Khoa
+ID: s3986281
+Acknowledgement: Acknowledge the resources that you use here. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Assests/bookshelf-high-resolution-color-logo.png">
+</head>
+<body>
+    <header>
+        <img src="Assests/logo.png" alt="logo">
+        <nav class="navbar">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+
+            <div class="navbutton">
+                <ul >
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fiction.html">Fiction </a></li>
+                    <li><a href="nonfiction.html">Non fiction</a></li>
+                    <li><a href="textbook.html">Text book</a></li>
+                </ul>
+            </div>
+           
+        </nav>
+    </header>    
+    <h5>Home >Non Fiction > Black and British: A Forgotten History </h5>
+    <div class="book-page">
+        <div class="book-container">
+            <img src="Assests/blackandbritish.jpg" alt="blackandbritish" class="detailimg">
+        </div>
+        <div class="side-book-container">
+            <img src="Assests/black1.jpeg" alt="blackandbritish" class="detailimg-1">
+            <img src="Assests/black2.jpeg" alt="blackandbritish" class="detailimg-2">
+            <img src="Assests/black3.jpg" alt="blackandbritish" class="detailimg-3">
+
+        </div>
+        <div class="button-container-detail">
+            <a class="productinfo" href="">$10</a>
+            <button class="detailbutton">Buy now</button>
+            <button class="detailbutton">Add to cart</button>
+        </div>  
+    </div>
+    <div class="bookinfo">
+        <h2>Black and British: A Forgotten History</h2>
+        <p>
+            In this vital re-examination of a shared history, historian and broadcaster David Olusoga tells the rich and revealing story of the long relationship between the British Isles and the people of Africa and the Caribbean.
+
+This edition, fully revised and updated, features a new chapter encompassing the Windrush scandal and the Black Lives Matter protests of 2020, events which put black British history at the center of urgent national debate. Black and British is vivid confirmation that black history can no longer be kept separate and marginalized. It is woven into the cultural and economic histories of the nation and it belongs to us all.
+
+Drawing on new genealogical research, original records, and expert testimony, Black and British reaches back to Roman Britain, the medieval imagination, Elizabethan 'blackamoors' and the global slave-trading empire. It shows that the great industrial boom of the nineteenth century was built on American slavery, and that black Britons fought at Trafalgar and in the trenches of both World Wars. Black British history is woven into the cultural and economic histories of the nation. It is not a singular history, but one that belongs to us all.
+
+Unflinching, confronting taboos, and revealing hitherto unknown scandals, Olusoga describes how the lives of black and white Britons have been entwined for centuries.
+ </p>
+    </div> 
+  
+
+    <footer>
+        <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Copyright</a></li>
+            <li><a href="contact.html">Contact Us   </a></li>
+        </ul>
+        <script>
+            const toggleButton = document.querySelector('.toggle-button');
+            const navbutton = document.querySelector('.navbutton');
+    
+            toggleButton.addEventListener('click', () => {
+                navbutton.classList.toggle('active');
+            });
+        </script>
+    </footer>
+</body>
+</html>

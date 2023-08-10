@@ -1,0 +1,90 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Dong Dang Khoa
+ID: s3986281
+Acknowledgement: Acknowledge the resources that you use here. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Assests/bookshelf-high-resolution-color-logo.png">
+</head>
+<body>
+    <header>
+        <img src="Assests/logo.png" alt="logo">
+        <nav class="navbar">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+
+            <div class="navbutton">
+                <ul >
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fiction.html">Fiction </a></li>
+                    <li><a href="nonfiction.html">Non fiction</a></li>
+                    <li><a href="textbook.html">Text book</a></li>
+                </ul>
+            </div>
+           
+        </nav>
+    </header>    
+    <h5>Home >Non Fiction > Last boat out of Shanghai </h5>
+    <div class="book-page">
+        <div class="book-container">
+            <img src="Assests/shanghai.jpg" alt="shanghai" class="detailimg">
+        </div>
+        <div class="side-book-container">
+            <img src="Assests/shanghai1.jpeg" alt="shanghai" class="detailimg-1">
+            <img src="Assests/shanghai2.jpeg" alt="shanghai" class="detailimg-2">
+            <img src="Assests/shanghai3.jpeg" alt="shanghai" class="detailimg-3">
+
+        </div>
+        <div class="button-container-detail">
+            <a class="productinfo" href="">$10</a>
+            <button class="detailbutton">Buy now</button>
+            <button class="detailbutton">Add to cart</button>
+        </div>  
+    </div>
+    <div class="bookinfo">
+        <h2>Last boat out of Shanghai</h2>
+        <p>The dramatic real life stories of four young people caught up in the mass exodus of Shanghai in the wake of China's 1949 Communist revolution--a precursor to the struggles faced by emigrants today.
+
+
+            Shanghai has historically been China's jewel, its richest, most modern and westernized city. The bustling metropolis was home to sophisticated intellectuals, entrepreneurs, and a thriving middle class when Mao's proletarian revolution emerged victorious from the long civil war. Terrified of the horrors the Communists would wreak upon their lives, citizens of Shanghai who could afford to fled in every direction. Seventy years later, members of the last generation to fully recall this massive exodus have revealed their stories to Chinese American journalist Helen Zia, who interviewed hundreds of exiles about their journey through one of the most tumultuous events of the twentieth century. From these moving accounts, Zia weaves together the stories of four young Shanghai residents who wrestled with the decision to abandon everything for an uncertain life as refugees in Hong Kong, Taiwan, and the United States.
+            
+            Benny, who as a teenager became the unwilling heir to his father's dark wartime legacy, must decide either to escape to Hong Kong or navigate the intricacies of a newly Communist China. The resolute Annuo, forced to flee her home with her father, a defeated Nationalist official, becomes an unwelcome exile in Taiwan. The financially strapped Ho fights deportation from the U.S. in order to continue his studies while his family struggles at home. And Bing, given away by her poor parents, faces the prospect of a new life among strangers in America. The lives of these men and women are marvelously portrayed, revealing the dignity and triumph of personal survival.
+        </p>
+    </div> 
+  
+
+    <footer>
+        <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Copyright</a></li>
+            <li><a href="contact.html">Contact Us   </a></li>
+        </ul>
+        <script>
+            const toggleButton = document.querySelector('.toggle-button');
+            const navbutton = document.querySelector('.navbutton');
+    
+            toggleButton.addEventListener('click', () => {
+                navbutton.classList.toggle('active');
+            });
+        </script>
+    </footer>
+</body>
+</html>
